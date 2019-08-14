@@ -24,7 +24,8 @@
     "precoveragehtml": "npm run coverage",
     "coveragehtml": "nyc report -r html",
     "predev": "if [ ! -f coverage/index.html ]; then mkdir coverage; cp .waiting.html coverage/index.html; fi",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "prepack": "npm install"
   },
   "repository": {
     "type": "git",
